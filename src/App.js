@@ -1,24 +1,20 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { NavBar } from "./components/NavBar";
+import {SideBar} from "./components/SideBar"
+import {MyBooks} from "./components/MyBooks"
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" style={{ height: "100%" }}>
+      <NavBar />
+      <div className="row" >
+        <div className="col s2" style={{ background: "lightgrey", height: "100%", position:"fixed" }}>
+          <SideBar/>
+        </div>
+        <div className="col s10 offset-s2" style={{background:"#f2f2f2", height:"100%", position:"fixed" }}>
+          <MyBooks/>
+        </div>
+      </div>
     </div>
   );
 }
