@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import Modal from "./Modal";
 
 export const SideBar = () => {
   const [activePage, setActivePage] = useState("myBooks");
@@ -17,12 +18,7 @@ export const SideBar = () => {
       </div>
       <br />
       <div>
-        <a
-          className="waves-effect waves-light btn teal accent-4"
-          style={{ width: "-webkit-fill-available" }}
-        >
-          <i className="material-icons left">library_add</i>Add a Book
-        </a>
+
       </div>
       <br />
       <div className="collection">
