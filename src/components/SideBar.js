@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import Modal from "./Modal";
+import { Link } from "react-router-dom";
 
 export const SideBar = () => {
   const [activePage, setActivePage] = useState("myBooks");
@@ -17,26 +17,24 @@ export const SideBar = () => {
         />
       </div>
       <br />
-      <div>
-
-      </div>
+      <div></div>
       <br />
       <div className="collection">
-        <a
-          href="#!"
+        <Link
+          to="/"
           className={`collection-item ${activePage === "myBooks" && `active`}`}
           id="myBooks"
           onClick={handleClick}
         >
           My Library
-        </a>
-        <a
-          href="#!"
+        </Link>
+        <Link
+          to="/profile"
           className={`collection-item ${activePage === "profile" && `active`}`}
           onClick={handleClick}
         >
           Profile
-        </a>
+        </Link>
       </div>
     </>
   );
