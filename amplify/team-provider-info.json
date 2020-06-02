@@ -1,0 +1,15 @@
+{
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-readmeapp-dev-195419-authRole",
+            "UnauthRoleArn": "arn:aws:iam::142413047634:role/amplify-readmeapp-dev-195419-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::142413047634:role/amplify-readmeapp-dev-195419-authRole",
+            "Region": "us-east-2",
+            "DeploymentBucketName": "amplify-readmeapp-dev-195419-deployment",
+            "UnauthRoleName": "amplify-readmeapp-dev-195419-unauthRole",
+            "StackName": "amplify-readmeapp-dev-195419",
+            "StackId": "arn:aws:cloudformation:us-east-2:142413047634:stack/amplify-readmeapp-dev-195419/36441310-a463-11ea-9ee7-0294f7a52ca2",
+            "AmplifyAppId": "d3j771fyn828y5"
+        }
+    }
+}

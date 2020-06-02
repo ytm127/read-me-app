@@ -41,7 +41,7 @@ function App() {
           }}
         >
           <Switch>
-            <Route path="/" component={MyBooks} exact />
+            <Route path="/" component={Landing} exact />
             <Route path="/profile" component={Profile} />
             <Route path="/sign-in" component={SignIn} />
             <Route path="/landing" component={Landing} />
