@@ -12,7 +12,7 @@ function App() {
   const [loggedIn, setLoggedIn] = React.useState(false);
 
   return (
-    <div className="App" style={{ height: "100%" }}>
+    <div className="App" style={{ height: "100%", overflow:"overlay" }}>
       <NavBar />
       <div className="row">
         {loggedIn ? (
@@ -34,7 +34,6 @@ function App() {
           style={{
             background: "rgb(255,206,213)",
             height: "100%",
-            position: "fixed",
             width: "100%",
             background:
               "linear-gradient(243deg, rgba(255,206,213,1) 0%, rgba(255,152,152,1) 34%)"

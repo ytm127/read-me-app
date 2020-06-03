@@ -1,1 +1,20 @@
-{}
+{
+	"api": {
+		"readmeapp": {
+			"service": "AppSync",
+			"providerPlugin": "awscloudformation",
+			"output": {
+				"authConfig": {
+					"additionalAuthenticationProviders": [],
+					"defaultAuthentication": {
+						"authenticationType": "API_KEY",
+						"apiKeyConfig": {
+							"description": "thomas_admin",
+							"apiKeyExpirationDays": "14"
+						}
+					}
+				}
+			}
+		}
+	}
+}

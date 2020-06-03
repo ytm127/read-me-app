@@ -38,16 +38,8 @@ export const Landing = () => {
         <div style={{ marginLeft: "4vw", marginRight: "4vw" }}>
           <div className="card" style={{ borderRadius: 10 }}>
             <div className="card-content" style={{ padding: "5vh" }}>
-              <div className="row">
-                <div className="col s4" style={{ textAlign: "center" }}>
-                  <h5>Manage your books</h5>
-                  <div
-                    style={{ fontSize: 16, marginTop: "3vh", color: "#616161" }}
-                  >
-                    Add new books you're reading and manage collection of the
-                    books you've read in your "library"
-                  </div>
-                </div>
+            <div className="row">
+                
                 <div className="col s4" style={{ textAlign: "center" }}>
                   <h5>Add your thoughts</h5>
                   <div
@@ -56,6 +48,14 @@ export const Landing = () => {
                     Add your thoughts and comments after, or while you're
                     reading the book. You can also your books for future
                     reference
+                  </div>
+                </div>
+                <div className="col s4" style={{ textAlign: "center" }}>
+                  <h5>Share with your friends</h5>
+                  <div
+                    style={{ fontSize: 16, marginTop: "3vh", color: "#616161" }}
+                  >
+                    Let your friends know what you're currently reading
                   </div>
                 </div>
                 <div className="col s4" style={{ textAlign: "center" }}>

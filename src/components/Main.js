@@ -18,7 +18,7 @@ export const Main = () => {
         </div>
         <div
           className="col s10 offset-s2"
-          style={{ background: "#f2f2f2", height: "100%", position: "fixed" }}
+          style={{ background: "#f2f2f2", height: "100%" }}
         >
           <MyBooks />
         </div>
