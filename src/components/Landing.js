@@ -14,12 +14,12 @@ export const Landing = () => {
             </h1>
             <div className="row">
               <div className="col">
-                <a className="waves-effect waves-light btn btn-large">
+                <a className="btn btn-large">
                   Learn more
                 </a>
               </div>
               <div className="col">
-                <a className="waves-effect waves-light btn btn-large">
+                <a className="btn btn-large">
                   <FontAwesomeIcon icon={faBook} size="1x" />
                   &nbsp; Start reading
                 </a>
@@ -70,10 +70,6 @@ export const Landing = () => {
             </div>
           </div>
         </div>
-      </div>
-      {/* Bottom part */}
-      <div className="row">
-
       </div>
     </div>
   );

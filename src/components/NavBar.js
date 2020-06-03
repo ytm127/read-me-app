@@ -15,7 +15,7 @@ export const NavBar = () => {
             <li>
               <Modal />
             </li>
-            <li>
+            <li style={{background:"lightgrey"}}>
               <Link to="/sign-in">Sign in </Link>
             </li>
           </ul>

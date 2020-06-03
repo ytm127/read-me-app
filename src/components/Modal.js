@@ -36,7 +36,7 @@ class Modal extends Component {
     return (
       <div>
         <a
-          className="waves-effect waves-light btn modal-trigger"
+          className=" btn modal-trigger"
           data-target="modal1"
         >
           <i className="material-icons left">library_add</i>
@@ -59,10 +59,10 @@ class Modal extends Component {
             <p>A bunch of text</p>
           </div>
           <div className="modal-footer">
-            <a className="modal-close waves-effect waves-red btn-flat">
+            <a className="modal-close btn-flat">
               Discard
             </a>
-            <a className="modal-close waves-effect waves-green btn-flat">
+            <a className="modal-close btn-flat">
               Add to library
             </a>
           </div>

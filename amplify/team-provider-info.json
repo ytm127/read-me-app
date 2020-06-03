@@ -10,6 +10,11 @@
             "StackName": "amplify-readmeapp-dev-195419",
             "StackId": "arn:aws:cloudformation:us-east-2:142413047634:stack/amplify-readmeapp-dev-195419/36441310-a463-11ea-9ee7-0294f7a52ca2",
             "AmplifyAppId": "d3j771fyn828y5"
+        },
+        "categories": {
+            "auth": {
+                "readmeappc5164e2f": {}
+            }
         }
     }
 }

@@ -7,12 +7,15 @@ import { SideBar } from "./components/SideBar";
 import { MyBooks } from "./components/MyBooks";
 import { NavBar } from "./components/NavBar";
 import { Landing } from "./components/Landing";
-import car from "./landing.png";
+import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react'
+
+
 function App() {
   const [loggedIn, setLoggedIn] = React.useState(false);
 
   return (
-    <div className="App" style={{ height: "100%", overflow:"overlay" }}>
+    <div className="App" style={{ height: "100%", overflow: "overlay" }}>
+      <AmplifySignOut  />
       <NavBar />
       <div className="row">
         {loggedIn ? (
@@ -27,8 +30,8 @@ function App() {
             <SideBar />
           </div>
         ) : (
-          <div />
-        )}
+            <div />
+          )}
         <div
           className={loggedIn ? "col s10 offset-s2" : "col 12"}
           style={{
@@ -51,4 +54,4 @@ function App() {
   );
 }
 
-export default App;
+export default withAuthenticator(App);
