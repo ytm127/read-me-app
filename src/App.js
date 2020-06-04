@@ -7,7 +7,7 @@ import { SideBar } from "./components/SideBar";
 import { MyBooks } from "./components/MyBooks";
 import { NavBar } from "./components/NavBar";
 import { Landing } from "./components/Landing";
-import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react'
+import { withAuthenticator,  } from '@aws-amplify/ui-react'
 
 
 function App() {
@@ -15,7 +15,6 @@ function App() {
 
   return (
     <div className="App" style={{ height: "100%", overflow: "overlay" }}>
-      <AmplifySignOut  />
       <NavBar />
       <div className="row">
         {loggedIn ? (

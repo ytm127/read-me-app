@@ -1,9 +1,10 @@
 import React from "react";
 import Modal from "./Modal";
 import { Link } from "react-router-dom";
+import {  AmplifySignOut } from '@aws-amplify/ui-react';
 
 export const NavBar = () => {
-  const [loggedIn, setLoggedIn] =  React.useState(false)
+  const [loggedIn, setLoggedIn] =  React.useState(true)
   return (
     <div className="navbar-fixed">
       <nav style={{background:'white'}}>
@@ -16,7 +17,7 @@ export const NavBar = () => {
               <Modal />
             </li>
             <li style={{background:"lightgrey"}}>
-              <Link to="/sign-in">Sign in </Link>
+              {loggedIn ? <AmplifySignOut style={{background:"lightgrey"}}/> : <Link to="/sign-in">Sign in </Link>}
             </li>
           </ul>
         </div>
